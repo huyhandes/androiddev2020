@@ -20,8 +20,8 @@ public class ForecastFragment extends Fragment {
 
         final String days[] = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun"};
 
-        ViewGroup v = (ViewGroup) inflater.inflate(R.layout.activity_weather,null,false);
-        LinearLayout linearLayout = v.findViewById(R.id.main_activity);
+        ViewGroup v = (ViewGroup) inflater.inflate(R.layout.fragment_forecast,null,false);
+        LinearLayout linearLayout = v.findViewById(R.id.forecastFragment);
         for(int i=0; i<10; ++i){
             View row = inflater.inflate(R.layout.weather_row,container,false);
             ((TextView)row.findViewById(R.id.day)).setText(days[i%7]);

@@ -6,4 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".WeatherActivity" />
+    tools:context=".WeatherActivity" >
+
+    <fragment
+        android:id="@+id/fragmentWeather"
+        android:name="vn.edu.usth.weatheractivity.WeatherFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <fragment
+        android:id="@+id/fragmentForcast"
+        android:name="vn.edu.usth.weatheractivity.ForecastFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+</LinearLayout>
