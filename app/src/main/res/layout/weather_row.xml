@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
     <TextView
         android:id="@+id/day"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:textAlignment="center"/>
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
 
     <ImageView
         android:id="@+id/weather"
-        android:layout_width="200dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        android:contentDescription="weather image"/>
-</LinearLayout>
+        android:contentDescription="weather image"
+        android:padding="10dp"
+        android:layout_toRightOf="@id/day"/>
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/weather"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:layout_below="@id/city"
+        android:layout_toRightOf="@id/weather"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>
