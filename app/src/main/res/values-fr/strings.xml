@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Météo de USTH</string>
+    <string name="Mon">Lun</string>
+    <string name="Tue">Mar</string>
+    <string name="Wed">Mer</string>
+    <string name="Thu">Jeu</string>
+    <string name="Fri">Ven</string>
+    <string name="Sat">Sam</string>
+    <string name="Sun">Dim</string>
+</resources>
